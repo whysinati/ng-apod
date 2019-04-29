@@ -1,7 +1,9 @@
 <main *ngIf="apod">
-
+  <button *ngIf="date" [routerLink]="['/apod', this.date]">Pick a new RANDOM graphic</button>
+  <hr>
   <h1>{{ apod.title }}</h1>
-
+  
+  <hr>
   <!-- Only show the image element if the media_type is set to image -->
   <img *ngIf="apod.media_type==='image'" [src]="apod.url" [alt]="apod.title">
 
