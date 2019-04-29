@@ -26,9 +26,8 @@ export class ApodService {
   }
 
   //Return an Observable Apod model
-  getApod(): Observable<Apod>{
-    //Make a get request over HTTP
-    return this.http.get<Apod>(this.url);
+  getApod(date:string): Observable<Apod>{
+    return this.http.get<Apod>(`${this.url}&date=${date}`);
   }
 
 }
