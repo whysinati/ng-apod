@@ -11,7 +11,7 @@ import { ApodComponent } from './apod/apod.component';
 //Import the pipe from node_modules
 import { SafePipeModule } from 'safe-pipe';
 
-import { NgApodConfig } from '../../config/ng-apod.config';
+import { NgApodConfig } from '../../../config/ng-apod.config';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 

@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 //Import Apod
 import { Apod } from '../models/apod';
 
-import { NgApodConfig } from '../../../config/ng-apod.config';
+import { NgApodConfig } from '../../../../config/ng-apod.config';
 
 @Injectable({
   providedIn: 'root'
